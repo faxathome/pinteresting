@@ -8,6 +8,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+
 	<div id="wrap">
 		<%= render 'layouts/header' %>
 		<div class="container">
@@ -15,10 +16,13 @@
 			     <%= content_tag(:div, msg, class: "alert alert-info") %>
 			<% end %>
 			<%= yield %>
+
 		</div>
+
 		<div id="push"></div>
-	</div>
-		<%= render 'layouts/footer' %>
+
 	
+	</div>
+	<%= render 'layouts/footer' %>
 </body>
 </html>
